@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <RadioGroup
+        android:id="@+id/searchBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/byGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Gol Krallığı" />
+
+        <RadioButton
+            android:id="@+id/byYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sarı Kart" />
+
+        <RadioButton
+            android:id="@+id/byRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kırmızı Kart" />
+
+        <RadioButton
+            android:id="@+id/byAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yaş" />
+
+        <RadioButton
+            android:id="@+id/byLineUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlk 11 Sayısı" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/show"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchBy"
+        android:layout_marginBottom="97dp"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/searchBy"
+        android:text="Göster" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:text="İsim:" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/searchBy"
+        android:layout_below="@+id/searchBy"
+        android:max="100"
+        android:progress="50" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="17dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/SearchName"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:text="Ara" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar02"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SearchName"
+        android:layout_marginTop="18dp"
+        android:max="100"
+        android:progress="50" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProgressBar02"
+        android:layout_below="@+id/ProgressBar02"
+        android:layout_marginTop="30dp"
+        android:text="Hiç ilk 11 başlamadan sarı kart gören futbolcular" />
+
+    <Button
+        android:id="@+id/Fancy"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/SearchName"
+        android:layout_marginRight="16dp"
+        android:text="Gör" />
+
+</RelativeLayout>

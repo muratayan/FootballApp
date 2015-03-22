@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        android:text="Hoşgeldiniz. Bu, 2012-2013 sezonu Türkiye Süper Ligi Oyuncu istatistiklerine kolayca erişebileceğiniz bir uygulamadır. Başlamak için Lütfen takım listesini seçin veya detaylı arama butonuna tıklayın" />
+
+  
+    
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal" >
+        
+	    <Button
+	        android:id="@+id/teamsButton"
+	        android:layout_width="120dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="30dp"
+	        android:text="Takım Listesi" />
+	    
+	    <Button
+	        android:id="@+id/searchButton"
+	        android:layout_width="120dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="30dp"
+	        android:text="Arama" />
+	   
+    </LinearLayout>
+
+</LinearLayout>
